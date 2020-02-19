@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/panipuari_bg"
+    tools:context=".FlavourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:paddingLeft="45dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dear Customer,"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please select flavour"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Total Plate"
+                                android:gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/plate"
+                                android:layout_width="match_parent"
+                                android:text="0"
+                                android:gravity="center"
+                                android:textSize="80sp"
+                                android:textColor="#fff"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:background="#fff"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Panipuri Left"
+                                android:gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:textSize="20sp"
+                                android:textColor="#fff"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/total_avilalbe"
+                                android:layout_width="match_parent"
+                                android:text="0"
+                                android:gravity="center"
+                                android:textSize="80sp"
+                                android:textColor="#fff"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="44dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/fav1"
+                        android:layout_width="300dp"
+                        android:layout_height="73dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/btn_1"
+                        android:paddingLeft="43dp"
+                        android:text="ORANGE"
+                        android:textColor="#fff"
+                        android:textSize="35sp" />
+
+                    <Button
+                        android:id="@+id/fav2"
+                        android:layout_width="300dp"
+                        android:layout_height="73dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/btn_1"
+                        android:paddingLeft="43dp"
+                        android:text="ORANGE"
+                        android:textColor="#fff"
+                        android:textSize="35sp" />
+
+                    <Button
+                        android:id="@+id/fav3"
+                        android:layout_width="300dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/btn_1"
+                        android:paddingLeft="43dp"
+                        android:text="ORANGE"
+                        android:textColor="#fff"
+                        android:textSize="35sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_marginTop="44dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/fav4"
+                        android:layout_width="300dp"
+                        android:layout_height="73dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/btn_1"
+                        android:paddingLeft="43dp"
+                        android:text="ORANGE"
+                        android:textColor="#fff"
+                        android:textSize="35sp" />
+
+                    <Button
+                        android:id="@+id/fav5"
+                        android:layout_width="300dp"
+                        android:layout_height="73dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/btn_1"
+                        android:paddingLeft="43dp"
+                        android:text="ORANGE"
+                        android:textColor="#fff"
+                        android:textSize="35sp" />
+
+                    <Button
+                        android:id="@+id/fav6"
+                        android:layout_width="300dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/btn_1"
+                        android:paddingLeft="43dp"
+                        android:text="ORANGE"
+                        android:textColor="#fff"
+                        android:textSize="35sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
